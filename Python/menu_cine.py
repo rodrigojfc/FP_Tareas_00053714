@@ -11,6 +11,7 @@ def menu():
     print("\t1 - primera opción")
     print("\t2 - segunda opción")
     print("\t3 - tercera opción")
+    print("\t4 - cuarta opcion")
     print("\t9 - salir")
 
 
@@ -54,7 +55,7 @@ while True:
     # Mostramos el menu
     menu()
     # solicituamos una opción al usuario
-    opcionMenu = int(input("inserta un numero valor >> "))
+    opcionMenu = int(input("inserta una opcion: "))
 
     if opcionMenu == 1:
         print("")
@@ -72,6 +73,7 @@ while True:
     elif opcionMenu == 4:
         print("Has pulsado la opción 4...")
         pelicula(opcionMenu)
+    elif opcionMenu == 9:
         break
     else:
         print("")
